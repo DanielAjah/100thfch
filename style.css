@@ -24,6 +24,21 @@ body {
     overflow-x: hidden;
 }
 
+/* --- Footer --- */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 /* --- Notifikasi Toast --- */
 .notification {
     visibility: hidden;
@@ -433,4 +448,5 @@ tr:hover { background-color: #f0f7f4; }
 
     .header-buttons { width: 100%; justify-content: center; }
     .header-buttons .btn { width: auto; }
+
 }
