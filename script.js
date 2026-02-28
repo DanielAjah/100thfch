@@ -6,7 +6,7 @@ const START_DATE = new Date('2025-03-01'); // Tanggal awalinput (sesuai instruks
 
 // Menghitung jumlah hari dari 1 Maret 2025 hingga 31 Des 2026
 const END_DATE = new Date('2026-12-31');
-const JUMLAH_HARI = Math.round((END_DATE - START_DATE) / (1000 * 60 * 60 * 24)) + 1; // 671 hari
+const JUMLAH_HARI = Math.round((END_DATE - START_DATE) / (1000 * 60 * 60 * 24)) + 1;
 
 /* ========================================== */
 /* 2. FUNGSI NOTIFIKASI TOAST                */
@@ -212,7 +212,7 @@ function saveData() {
     }
 
     localStorage.setItem(DB_KEY, JSON.stringify(processedData));
-    showNotification('Data berhasil disimpan ke database lokal!');
+    showNotification('Data berhasil disimpan!');
 }
 
 /* ========================================== */
