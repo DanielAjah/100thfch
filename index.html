@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Tanaman: Jahe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Notifikasi Toast -->
+    <div id="notification" class="notification">
+        <span id="notification-message">Pesan</span>
+    </div>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="admin.html" target="_blank" class="fade-in-down">Masuk Admin</a>
+    </nav>
+
+    <div class="container">
+        <!-- Kartu Tanaman (Animasi Fade In Up) -->
+        <div class="plant-card fade-in-up">
+            <div class="plant-img">
+                <!-- GANTI GAMBAR JAHE -->
+                <img src="https://plus.unsplash.com/premium_photo-1675364893053-180a3c6e0119?q=80&w=870&auto=format&fit=crop" alt="Rimpang Jahe">
+            </div>
+            <div class="plant-info">
+                <span class="badge fade-in-up delay-1">Tanaman Obat</span>
+                <h1 class="fade-in-up delay-2">Jahe</h1>
+                <p class="latin fade-in-up delay-3">Zingiber officinale</p>
+                
+                <div class="info-grid">
+                    <div class="info-item fade-in-up delay-4">
+                        <h3>Umur Rata-rata</h3>
+                        <p>8 - 10 Bulan</p>
+                    </div>
+                    <div class="info-item fade-in-up delay-4">
+                        <h3>Panjang Maks</h3>
+                        <p>~ 100 cm</p>
+                    </div>
+                </div>
+
+                <p class="description fade-in-up delay-5">
+                    Jahe adalah tanaman rimpang yang berasal dari Asia Tenggara. Tanaman ini terkenal karena memiliki rimpang (rizoma) yang sering digunakan sebagai rempah-rempah untuk memasak dan obat tradisional untuk kesehatan.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bagian Kandungan & Manfaat (Scroll Animation) -->
+        <div class="info-section">
+            <div class="info-box scroll-hidden scroll-left">
+                <h2>🌿 Kandungan</h2>
+                <ul>
+                    <li><strong>Gingerol:</strong> Senawa aktif utama yang memberikan efek antiinflamasi dan antioxidantes.</li>
+                    <li><strong>Shogaol:</strong> Senawa yang memberikan rasa pedas dan manfaat kesehatan.</li>
+                    <li><strong>Zingiberene:</strong> Memberikan aroma khas jahe.</li>
+                    <li><strong>Minerals:</strong> Manganese, Magnesium, Potassium, dan Vitamin C.</li>
+                </ul>
+            </div>
+
+            <div class="info-box scroll-hidden scroll-bottom">
+                <h2>💊 Manfaat Kesehatan</h2>
+                <ul>
+                    <li><strong>Meredakan Mual:</strong> Sangat efektif untuk mengatasi mual akibat hamil atau mabuk perjalanan.</li>
+                    <li><strong>Mengurangi Peradangan:</strong> Gingerol membantu meredakan peradangan sendi.</li>
+                    <li><strong>Meningkatkan Imun:</strong> Antioksidannya membantu tubuh melawan radikal bebas.</li>
+                    <li><strong>Memperbaiki Pencernaan:</strong> Membantu meredakan gangguan pencernaan.</li>
+                </ul>
+            </div>
+
+            <div class="info-box scroll-hidden scroll-right">
+                <h2>🍳 Kegunaan Sehari-hari</h2>
+                <ul>
+                    <li><strong>Bahan Dapur:</strong> Digunakan sebagai bumbu dapur (rawon, soto, teh).</li>
+                    <li><strong>Minuman Tradisional:</strong> Bahan utama wedang jahe dan obat masuk angin.</li>
+                    <li><strong>Pengawet Alami:</strong> Sifat antibakterinya digunakan untuk mengamankan makanan.</li>
+                    <li><strong>Industri Kosmetik:</strong> Ekstrak jahe digunakan dalam produk perawatan kulit.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bagian Tabel Database (Scroll Animation) -->
+        <div class="data-section scroll-hidden scroll-bottom">
+            <h2>📊 Data Pertumbuhan Tanaman</h2>
+            <p class="subtitle">Riwayat panjang tanaman berdasarkan tanggal.</p>
+            
+            <!-- Ringkasan Statistik -->
+            <div class="stats-summary">
+                <div class="stat-box">
+                    <h3>Total Hari</h3>
+                    <p id="total-days">0 Hari</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Tinggi Rata-rata</h3>
+                    <p id="avg-height">0 cm</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table id="plant-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal</th>
+                            <th>Panjang (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data akan dimuat oleh JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="no-data-msg" style="display:none; text-align:center; padding: 20px; color: #666;">
+                Data belum tersedia.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
