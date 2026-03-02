@@ -111,11 +111,37 @@ footer p {
 .scroll-left { transform: translateX(-50px); }
 .scroll-right { transform: translateX(50px); }
 
-/* Navigasi */
+/* --- Navigasi (Diperbarui) --- */
 nav {
-    text-align: right;
+    display: flex;               /* Membuat elemen berjejer horizontal */
+    justify-content: space-between; /* Logo di kiri, tombol di kanan */
+    align-items: center;         /* Vertikal tengah */
     padding: 15px 20px;
+    background-color: #ffffff;   /* Opsional:背景 warna */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
+/* Wadah untuk Logo dan Tulisan */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara logo dan teks */
+}
+
+/* Styling Gambar Logo */
+.nav-logo {
+    height: 40px; /* Sesuaikan tinggi logo */
+    width: auto;
+}
+
+/* Styling Tulisan ECO-LOVE HERBAL */
+.nav-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary); /* Menggunakan warna utama dari tema (Hijau) */
+    letter-spacing: 1px;
+}
+
 nav a {
     color: var(--primary);
     text-decoration: none;
@@ -450,4 +476,5 @@ tr:hover { background-color: #f0f7f4; }
     .header-buttons .btn { width: auto; }
 
 }
+
 
